@@ -2,6 +2,7 @@
 User must be notified if anything other than a 0 or 1 was entered
 User views the results in a single output field containing the decimal (base 10) equivalent of the binary number that was entered
 User can enter a variable number of binary digits
+Only works for positive numbers
 """
 def bin2dec(binary_number):
     for digit in binary_number:

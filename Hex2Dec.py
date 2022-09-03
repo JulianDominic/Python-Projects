@@ -1,3 +1,7 @@
+"""
+Hexadecimal to Decimal converter
+Only works for positive numbers.
+"""
 standard_hex ={
     "0": 0,
     "1": 1,
@@ -21,7 +25,7 @@ def hex2dec(hexadecimal):
     length_hexadecimal = len(hexadecimal)
     sum = 0
     # exponent = length_hexadecimal - 1
-    for hex in hexadecimal:
+    for hex in hexadecimal.upper():
         if hex in standard_hex:
             sum += 16 ** (length_hexadecimal - 1) * standard_hex[hex]
             length_hexadecimal -= 1
