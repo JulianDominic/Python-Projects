@@ -159,6 +159,7 @@ class Blackjack:
 
 # Create the main window and start the game
 window = tk.Tk()
+window.title("Blackjack")
 game = Blackjack(window)
 
 # Get the screen width and height
